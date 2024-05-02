@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Room</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <script src="https://kit.fontawesome.com/5ee22cfab6.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/room.css'>
+</head>
+<body>
+            <header style="border-bottom: none;">
+                <div>
+                  <a href="index.html"><img src="images/signature (7).png" width="250"  /></a>
+                  <!-- <button id="members__button">A</button> -->
+                </div>
+                <nav>
+                  <ul id="toggle">
+                    <!-- <button id="chat__button">b</button> -->
+                    <li><a href="index.html">Lobby</a></li>
+                  </ul>
+                </nav>
+                <span class="icone" onclick="menu()"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+              </header>
+
+    <main class="container">
+        <div id="room__container">
+            <section id="stream__container">
+
+                <div id="stream__box"></div>
+
+                <div id="streams__container"></div>
+
+                <div class="stream__actions">
+                    <button >
+                        <i id="camera-btn" class="fa-solid fa-video" ></i>
+                    </button>
+                    <button >
+                        <i id="mic-btn" class="fa-solid fa-microphone"></i>
+                    </button>
+                    <button >
+                        <i id="screen-btn" class="fa-solid fa-arrow-up-right-from-square"></i>
+                        
+                    </button>
+                    <button>
+                        <i id="leave-btn" class="fa-solid fa-phone-slash" style="color: #ff0000;"></i>
+                       
+                    </button>
+                </div>
+
+                <div class="join-btn"><button id="join-btn">Join Stream</button></div>
+            </section>
+            <div class="message_member">
+                <section id="members__container">
+                <div id="members__header">
+                    <p>Participants</p>
+                    <strong id="members__count">0</strong>
+                </div>
+                <div id="member__list">
+                </div>
+                </section>
+                <section id="messages__container">
+                    <div id="messages"></div>
+                    <form id="message__form">
+                        <input type="text" name="message" placeholder="Send a message...." />
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script type="text/javascript" src="js/AgoraRTC_N-4.20.1.js"></script>
+<script type="text/javascript" src="js/agora-rtm-sdk-1.5.1.js"></script>
+<script type="text/javascript" src="js/room.js"></script>
+<script type="text/javascript" src="js/room_rtm.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="js/room_rtc.js"></script>
+</html>
