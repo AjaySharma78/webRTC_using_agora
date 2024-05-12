@@ -1,10 +1,5 @@
 
-function removeSpecialCharacters(inputString) {
-    return inputString.replace(/[^a-zA-Z0-9]/g, '');
-}
-
-const input = "!@#$%^&*3bb16d8e8cb54e!%@$#41aaab883245941116!@#$%";
-const APP_ID = `${removeSpecialCharacters(input)}`
+const APP_ID = '3bb16d8e8cb54e41aaab883245941116'
 
 let uid = sessionStorage.getItem('uid')
 if(!uid){
